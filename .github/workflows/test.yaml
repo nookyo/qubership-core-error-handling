@@ -14,4 +14,4 @@ jobs:
         with:
           package-type: 'maven' # Specify the package type to delete
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use the GitHub token for authentication
+          PACKAGE_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use the GitHub token for authentication
