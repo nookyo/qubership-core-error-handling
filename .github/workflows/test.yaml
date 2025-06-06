@@ -1,4 +1,4 @@
-name: JAR deletion
+name: Dev BUild
 on:
   workflow_dispatch:
 
@@ -11,3 +11,5 @@ jobs:
 
       - name: Delete JAR files
         uses: nookyo/qubership-workflow-hub/actions/container-package-cleanup@main
+        with:
+          package-type: 'maven' # Specify the package type to delete
