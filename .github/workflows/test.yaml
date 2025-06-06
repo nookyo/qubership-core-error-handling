@@ -14,5 +14,6 @@ jobs:
         with:
           package-type: 'maven' # Specify the package type to delete
           dry-run: true # Set to true to perform a dry run without actual deletion
+          debug: true # Enable debug mode for detailed output
         env:
           PACKAGE_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use the GitHub token for authentication
