@@ -13,3 +13,5 @@ jobs:
         uses: nookyo/qubership-workflow-hub/actions/container-package-cleanup@main
         with:
           package-type: 'maven' # Specify the package type to delete
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use the GitHub token for authentication
