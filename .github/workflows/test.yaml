@@ -12,7 +12,7 @@ jobs:
       - name: Delete JAR files
         uses: nookyo/qubership-workflow-hub/actions/container-package-cleanup@main
         with:
-          package-type: 'maven' # Specify the package type to delete
+          package-type: 'container' # Specify the package type to delete
           dry-run: true # Set to true to perform a dry run without actual deletion
           debug: true # Enable debug mode for detailed output
         env:
