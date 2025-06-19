@@ -1,6 +1,19 @@
 name: Test Workflow for JAR Deletion
 on:
   workflow_dispatch:
+    inputs:
+      package-type:
+        description: 'Type of package to delete (e.g., maven, npm)'
+        required: true
+        default: 'maven'
+      dry-run:
+        description: 'Perform a dry run without actual deletion'
+        required: false
+        default: 'true'
+      debug:
+        description: 'Enable debug mode for detailed output'
+        required: false
+        default: 'false'
 
 jobs:
   delete-jar:
