@@ -4,7 +4,7 @@ on:
     inputs:
       package-type:
         description: 'Type of package to delete (e.g., maven, npm)'
-        required: true
+        required: false
         default: 'maven'
       dry-run:
         description: 'Perform a dry run without actual deletion'
