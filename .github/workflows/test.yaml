@@ -9,11 +9,13 @@ on:
       dry-run:
         description: 'Perform a dry run without actual deletion'
         required: false
-        default: 'true'
+        default: true
+        type: boolean
       debug:
         description: 'Enable debug mode for detailed output'
         required: false
-        default: 'false'
+        default: true
+        type: boolean
 
 jobs:
   delete-jar:
